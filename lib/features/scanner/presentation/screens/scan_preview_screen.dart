@@ -8,7 +8,7 @@ import '../../../../core/theme/app_theme.dart';
 import '../../providers/scanner_provider.dart';
 import '../../../ocr/providers/ocr_provider.dart';
 import '../../../pdf/providers/pdf_provider.dart';
-import 'ocr_result_screen.dart';
+import '../../../ocr/presentation/screens/ocr_result_screen.dart';
 
 class ScanPreviewScreen extends ConsumerStatefulWidget {
   const ScanPreviewScreen({super.key, required this.imageFile});
