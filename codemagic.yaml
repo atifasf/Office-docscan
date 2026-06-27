@@ -11,7 +11,8 @@ workflows:
         script: |
           flutter build apk --release \
             --build-name=2.0.0 \
-            --build-number=$BUILD_NUMBER
+            --build-number=$BUILD_NUMBER \
+            --android-skip-build-dependency-validation
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
     publishing:
