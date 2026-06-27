@@ -1,4 +1,4 @@
-    import 'dart:io';
+import 'dart:io';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 
@@ -18,7 +18,7 @@ class OcrLanguage {
   });
 }
 
-const ocrLanguages = [
+final ocrLanguages = [
   OcrLanguage(code: 'en', name: 'English',  nativeName: 'English',  script: TextRecognitionScript.latin),
   OcrLanguage(code: 'ur', name: 'Urdu',     nativeName: 'اردو',     script: TextRecognitionScript.latin),
   OcrLanguage(code: 'hi', name: 'Hindi',    nativeName: 'हिन्दी',   script: TextRecognitionScript.latin),
@@ -31,6 +31,14 @@ const ocrLanguages = [
   OcrLanguage(code: 'es', name: 'Spanish',  nativeName: 'Español',  script: TextRecognitionScript.latin),
 ];
 
+// Default language alag se define kiya
+final defaultOcrLanguage = OcrLanguage(
+  code: 'en',
+  name: 'English',
+  nativeName: 'English',
+  script: TextRecognitionScript.latin,
+);
+
 // ─── State ────────────────────────────────────────────────────────────────────
 
 class OcrState {
@@ -41,14 +49,14 @@ class OcrState {
   final List<TextBlock> blocks;
   final OcrLanguage selectedLanguage;
 
-  const OcrState({
+  OcrState({
     this.extractedText = '',
     this.isProcessing = false,
     this.progress = 0,
     this.error,
     this.blocks = const [],
-    this.selectedLanguage = ocrLanguages[0],
-  });
+    OcrLanguage? selectedLanguage,
+  }) : selectedLanguage = selectedLanguage ?? defaultOcrLanguage;
 
   OcrState copyWith({
     String? extractedText,
@@ -76,7 +84,7 @@ class OcrState {
 // ─── Notifier ─────────────────────────────────────────────────────────────────
 
 class OcrNotifier extends StateNotifier<OcrState> {
-  OcrNotifier() : super(const OcrState());
+  OcrNotifier() : super(OcrState());
 
   void setLanguage(OcrLanguage lang) {
     state = state.copyWith(selectedLanguage: lang);
