@@ -1,0 +1,95 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+		97C146E61CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				9740EEB11CF90186004384FC,
+				97C146F01CF9000F007C117D,
+				97C146EF1CF9000F007C117D,
+			);
+			sourceTree = "<group>";
+		};
+		97C146EF1CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C146F01CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				97C146FA1CF9000F007C117D,
+				97C146F71CF9000F007C117D,
+			);
+			name = Runner;
+			sourceTree = "<group>";
+		};
+		97C146F71CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				97C146FC1CF9000F007C117D,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97C146FA1CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				335BBD1A22A9A15E00E9071D,
+			);
+			name = "Runner";
+			sourceTree = "<group>";
+		};
+		335BBD1A22A9A15E00E9071D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = AppDelegate.swift;
+			sourceTree = "<group>";
+		};
+		9740EEB11CF90186004384FC = {
+			isa = PBXGroup;
+			children = (
+				9740EEB21CF90186004384FC,
+				7AFA3C8E1D35360C0083082E,
+				9740EEB31CF90186004384FC,
+			);
+			name = Flutter;
+			sourceTree = "<group>";
+		};
+		9740EEB21CF90186004384FC = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			name = Debug.xcconfig;
+			path = Flutter/Debug.xcconfig;
+			sourceTree = "<group>";
+		};
+		7AFA3C8E1D35360C0083082E = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			name = Release.xcconfig;
+			path = Flutter/Release.xcconfig;
+			sourceTree = "<group>";
+		};
+		9740EEB31CF90186004384FC = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			name = Generated.xcconfig;
+			path = Flutter/Generated.xcconfig;
+			sourceTree = "<group>";
+		};
+		97C146FC1CF9000F007C117D = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			name = Info.plist;
+			path = Runner/Info.plist;
+			sourceTree = "<group>";
+		};
+	};
+	rootObject = 97C146E61CF9000F007C117D;
+}

@@ -1,0 +1,63 @@
+name: scanverse
+description: AI Document Scanner with OCR and PDF Export
+publish_to: 'none'
+version: 2.0.0+2
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+
+  # Camera
+  camera: ^0.11.0+2
+  image_picker: ^1.1.2
+
+  # Image Processing
+  image: ^4.2.0
+  image_cropper: ^8.0.2
+
+  # OCR - Multi language
+  google_mlkit_text_recognition: ^0.13.1
+
+  # PDF
+  pdf: ^3.11.1
+  printing: ^5.13.1
+
+  # File & Share
+  path_provider: ^2.1.4
+  share_plus: ^10.0.2
+  open_filex: ^4.6.0
+  permission_handler: ^11.3.1
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  lottie: ^3.1.2
+  gap: ^3.0.1
+  cached_network_image: ^3.4.1
+  shimmer: ^3.0.0
+
+  # Storage
+  sqflite: ^2.3.3+1
+  shared_preferences: ^2.3.2
+
+  # Auth (Login)
+  crypto: ^3.0.3
+
+  # Utils
+  uuid: ^4.5.0
+  intl: ^0.19.0
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
