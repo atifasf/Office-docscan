@@ -5,6 +5,11 @@ workflows:
     environment:
       flutter: stable
     scripts:
+      - name: Update Gradle wrapper
+        script: |
+          cd android
+          sed -i 's|distributionUrl=.*|distributionUrl=https\\://services.gradle.org/distributions/gradle-8.7.0-all.zip|' gradle/wrapper/gradle-wrapper.properties
+          cat gradle/wrapper/gradle-wrapper.properties
       - name: Get Flutter packages
         script: flutter pub get
       - name: Build Android APK
@@ -22,3 +27,4 @@ workflows:
         notify:
           success: true
           failure: true
+          
