@@ -1,4 +1,4 @@
-import 'dart:io';
+    import 'dart:io';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 
@@ -21,7 +21,7 @@ class OcrLanguage {
 const ocrLanguages = [
   OcrLanguage(code: 'en', name: 'English',  nativeName: 'English',  script: TextRecognitionScript.latin),
   OcrLanguage(code: 'ur', name: 'Urdu',     nativeName: 'اردو',     script: TextRecognitionScript.latin),
-  OcrLanguage(code: 'hi', name: 'Hindi',    nativeName: 'हिन्दी',   script: TextRecognitionScript.devanagari),
+  OcrLanguage(code: 'hi', name: 'Hindi',    nativeName: 'हिन्दी',   script: TextRecognitionScript.latin),
   OcrLanguage(code: 'ar', name: 'Arabic',   nativeName: 'العربية',  script: TextRecognitionScript.latin),
   OcrLanguage(code: 'zh', name: 'Chinese',  nativeName: '中文',      script: TextRecognitionScript.chinese),
   OcrLanguage(code: 'ja', name: 'Japanese', nativeName: '日本語',    script: TextRecognitionScript.japanese),
