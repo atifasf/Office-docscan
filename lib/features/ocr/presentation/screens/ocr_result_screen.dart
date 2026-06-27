@@ -61,7 +61,6 @@ class _OcrResultScreenState extends ConsumerState<OcrResultScreen> {
       ),
       body: Column(
         children: [
-          // ─── Language Selector ───────────────────────────────────────
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
             color: AppTheme.surfaceCard,
@@ -126,7 +125,6 @@ class _OcrResultScreenState extends ConsumerState<OcrResultScreen> {
             ),
           ).animate().fadeIn(duration: 300.ms),
 
-          // ─── Stats bar ──────────────────────────────────────────────
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             color: AppTheme.surfaceSheet,
@@ -147,7 +145,6 @@ class _OcrResultScreenState extends ConsumerState<OcrResultScreen> {
             ),
           ),
 
-          // ─── Text content ────────────────────────────────────────────
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(16),
@@ -177,7 +174,6 @@ class _OcrResultScreenState extends ConsumerState<OcrResultScreen> {
             ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.03, end: 0),
           ),
 
-          // ─── Bottom bar ──────────────────────────────────────────────
           Container(
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
             decoration: const BoxDecoration(
