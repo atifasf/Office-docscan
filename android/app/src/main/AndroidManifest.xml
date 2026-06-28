@@ -23,6 +23,11 @@
         android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true">
 
+        <!-- ✅ ML Kit OCR - NAYA ADD HUA -->
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
